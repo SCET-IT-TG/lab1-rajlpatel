@@ -1,0 +1,65 @@
+db = db.getSiblingDB("examDB");
+
+db.students.insertOne({
+  name: "Raj L. Patel",
+  department: "IT",
+  semester: 4
+});
+
+db.students.insertOne({
+  name: "Harsh Mehta",
+  department: "CE",
+  semester: 6
+});
+
+db.students.insertOne({
+  name: "Kunal Desai",
+  department: "IT",
+  semester: 5,
+  mobile: "9123456789"
+});
+
+db.subjects.insertOne({
+  course_name: "B.Tech IT",
+  subject_list: ["Java", "DBMS", "Python", "Web Technology"]
+});
+
+db.faculty.insertOne({
+  department: "IT",
+  teachers: [
+    { name: "Prof. K. Mehta", experience: 18 },
+    { name: "Prof. R. Joshi", experience: 12 }
+  ]
+});
+
+db.students.insertOne({
+  _id: ObjectId(),
+  name: "Yash Trivedi",
+  department: "CE",
+  semester: 6
+});
+
+db.students.insertOne({
+  _id: ObjectId("64abc123456789abcdef0001"),
+  name: "Aarav Shah"
+});
+
+db.students.insertOne({
+  _id: ObjectId("64abc123456789abcdef0001"),
+  name: "Dev Patel"
+});
+
+db.subjects.insert({
+  course_name: "B.Tech CE",
+  subject_list: ["Maths", "Physics"]
+});
+
+db.subjects.insert({
+  course_name: "B.Tech ME",
+  subject_list: ["Thermodynamics", "Mechanics"]
+});
+
+db.subjects.insert({
+  course_name: "B.Tech EE",
+  subject_list: ["Circuits", "Power Systems"]
+});

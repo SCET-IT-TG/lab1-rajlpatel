@@ -1,9 +1,10 @@
 db = db.getSiblingDB("examDB");
 
 db.students.insertOne({
-  name: "Raj L. Patel",
+  name: "Raj Patel",
   department: "IT",
-  semester: 4
+  semester: 4,
+  mobile: 9876543210
 });
 
 db.students.insertOne({
@@ -15,8 +16,7 @@ db.students.insertOne({
 db.students.insertOne({
   name: "Kunal Desai",
   department: "IT",
-  semester: 5,
-  mobile: "9123456789"
+  semester: 5
 });
 
 db.subjects.insertOne({

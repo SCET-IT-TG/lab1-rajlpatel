@@ -32,26 +32,14 @@ db.students.insertOne({
 db.students.insertOne({
   _id: ObjectId("64abc123456789abcdef0001"),
   name: "Aarav Shah",
+  department: "IT",
+  semester: 7,
   mobile: 9876543214
-});
-
-db.students.insertOne({
-  _id: ObjectId("64abc123456789abcdef0001"),
-  name: "Dev Patel",
-  mobile: 9876543215
 });
 
 db.subjects.insertOne({
   course_name: "B.Tech IT",
   subject_list: ["Java", "DBMS", "Python", "Web Technology"]
-});
-
-db.faculty.insertOne({
-  department: "IT",
-  teachers: [
-    { name: "Prof. K. Mehta", experience: 18 },
-    { name: "Prof. R. Joshi", experience: 12 }
-  ]
 });
 
 db.subjects.insert({
@@ -64,7 +52,10 @@ db.subjects.insert({
   subject_list: ["Thermodynamics", "Mechanics"]
 });
 
-db.subjects.insert({
-  course_name: "B.Tech EE",
-  subject_list: ["Circuits", "Power Systems"]
+db.faculty.insertOne({
+  department: "IT",
+  teachers: [
+    { name: "Prof. K. Mehta", experience: 18 },
+    { name: "Prof. R. Joshi", experience: 12 }
+  ]
 });

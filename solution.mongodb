@@ -1,6 +1,6 @@
 db = db.getSiblingDB("examDB");
 
-db.students.insertOne({
+db.students.insert({
   name: "Raj Patel",
   department: "IT",
   semester: 4,
@@ -63,3 +63,4 @@ db.subjects.insert({
   course_name: "B.Tech EE",
   subject_list: ["Circuits", "Power Systems"]
 });
+

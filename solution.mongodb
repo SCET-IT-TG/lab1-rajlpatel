@@ -1,6 +1,6 @@
 db = db.getSiblingDB("examDB");
 
-db.students.insert({
+db.students.insertOne({
   name: "Raj Patel",
   department: "IT",
   semester: 4,
@@ -10,13 +10,35 @@ db.students.insert({
 db.students.insertOne({
   name: "Harsh Mehta",
   department: "CE",
-  semester: 6
+  semester: 6,
+  mobile: 9876543211
 });
 
 db.students.insertOne({
   name: "Kunal Desai",
   department: "IT",
-  semester: 5
+  semester: 5,
+  mobile: 9876543212
+});
+
+db.students.insertOne({
+  _id: ObjectId(),
+  name: "Yash Trivedi",
+  department: "CE",
+  semester: 6,
+  mobile: 9876543213
+});
+
+db.students.insertOne({
+  _id: ObjectId("64abc123456789abcdef0001"),
+  name: "Aarav Shah",
+  mobile: 9876543214
+});
+
+db.students.insertOne({
+  _id: ObjectId("64abc123456789abcdef0001"),
+  name: "Dev Patel",
+  mobile: 9876543215
 });
 
 db.subjects.insertOne({
@@ -30,23 +52,6 @@ db.faculty.insertOne({
     { name: "Prof. K. Mehta", experience: 18 },
     { name: "Prof. R. Joshi", experience: 12 }
   ]
-});
-
-db.students.insertOne({
-  _id: ObjectId(),
-  name: "Yash Trivedi",
-  department: "CE",
-  semester: 6
-});
-
-db.students.insertOne({
-  _id: ObjectId("64abc123456789abcdef0001"),
-  name: "Aarav Shah"
-});
-
-db.students.insertOne({
-  _id: ObjectId("64abc123456789abcdef0001"),
-  name: "Dev Patel"
 });
 
 db.subjects.insert({
@@ -63,4 +68,3 @@ db.subjects.insert({
   course_name: "B.Tech EE",
   subject_list: ["Circuits", "Power Systems"]
 });
-
